@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+*.env
+.env
+.venv/
+.vscode/
+.idea/
+pytest_cache/
+.mypy_cache/
+__pycache__/
+
+# Docker
+pgdata/
+postgres-init/
+
+# Others
+.DS_Store

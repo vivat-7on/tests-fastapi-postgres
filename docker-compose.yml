@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    container_name: test-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: rootpass
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d
+volumes:
+  pgdata:
